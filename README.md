@@ -1,6 +1,6 @@
 # Projeto Pokedex front-end
 Projeto feito com HTML, CSS e Javascript e funciona como uma pokédex, 
-ele exibe as seguintes informações sobre 300 Pokémons diferentes.
+ele exibe as informações de 300 Pokémons diferentes.
 
 Para a obter as informações de nome e tipo do Pokémon foi utilizada a API do "PokéAPI"
 em 'https://pokeapi.co/api/v2/pokemon/'.
