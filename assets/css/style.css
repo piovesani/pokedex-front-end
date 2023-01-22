@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	background: linear-gradient(rgb(43, 42, 42), rgb(27, 27, 27));
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.header{
+	width: 100%;
+	height: 500px;
+	background-image: url('../images/bg.png');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	border-radius: 8px;
+	
+
+	background-color: rgb(54, 54, 54);
+    background: linear-gradient(to bottom, rgb(43, 42, 42), rgb(27, 27, 27));
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 60%);
+    margin: 0.8rem;
+    padding: 1.4rem;
+    text-align: center;
+    color: #f1f1f1;
+    position: relative;
+}
+
+.card::after {
+	content: "";
+	display: block;
+	width: 56%;
+	height: 56%;
+	border-radius: 50%;
+	background: linear-gradient( to bottom, rgba(214, 214, 214, 0.3), rgba(77, 77, 77, 0.1) );
+	opacity: .7;
+	position: absolute;
+	top: 8%;
+	left: 22%;
+}
+
+.steel {
+	border: 2px solid #f4f4f4;
+}
+
+.fire {
+	border: 1px solid #FF1000;
+}
+
+.grass {
+	border: 1px solid #00B34A;
+}
+
+.electric {
+	border: 1px solid #E5FF19;
+}
+
+.water{
+	border: 1px solid #198BFF;
+}
+
+.ice {
+	border: 1px solid #19FFFA;
+}
+
+
+.ground {
+	border: 1px solid #995E3D;
+}
+
+.rock {
+	border: 1px solid #d5d5d4;
+}
+
+.fairy {
+	border: 1px solid  #fceaff;
+}
+
+.poison {
+	border: 1px solid #98d7a5;
+}
+
+.bug {
+	border: 1px solid #f8d5a3;
+}
+
+.dragon {
+	border: 1px solid #97b3e6;
+}
+
+.psychic {
+	border: 1px solid #eaeda1;
+}
+
+.flying {
+	border: 1px solid #F5F5F5;
+}
+
+.fighting {
+	border: 1px solid  #E6E0D4;
+}
+
+.normal {
+	border: 1px solid  #F5F5F5;
+}
+
+.ghost {
+	border: 1px solid #7D7A6E;
+	color: #ffffff;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	margin: auto;
+	height: 140px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	background-color: #000000;
+	color: #ffffff;
+}
